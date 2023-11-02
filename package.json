@@ -1,0 +1,20 @@
+{
+  "name": "store-express2",
+  "version": "1.0.0",
+  "description": "¡Bienvenido a la tercera y última actividad! En esta oportunidad tendrás como objetivo desarrollar una aplicación web para una empresa que necesite gestionar su inventario de productos y ventas en línea. El propósito de esta actividad es que puedas aplicar tus conocimientos teóricos y prácticos en temas como Node.js, MongoDB, Express, Mongoose, controladores, manejo de sesiones y autenticación, y otros paquetes útiles para el desarrollo de la aplicación.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "@BH1009",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0"
+  }
+}
