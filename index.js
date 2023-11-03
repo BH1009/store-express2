@@ -19,6 +19,7 @@ app.set('views', './src/views')
 
 // Routes 
 app.use(require('./src/routes/index.routes'))
+app.use(require('./src/routes/product.routes'))
 
 app.listen(PORT, () => {
     connection()
