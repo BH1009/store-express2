@@ -2,6 +2,7 @@ const express = require('express')
 const cors =  require('cors')
 const app = express()
 require('dotenv').config()
+const connection = require('./src/database/mongo')
 const PORT = 5500
 
 // Middlewares
@@ -20,5 +21,6 @@ app.set('views', './src/views')
 app.use(require('./src/routes/index.routes'))
 
 app.listen(PORT, () => {
+    connection()
     console.log(`Server is running on port ${PORT}`)
 })
