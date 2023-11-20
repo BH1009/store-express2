@@ -1,14 +1,14 @@
-const productRouter = require('mongoose').Router()
+const productRouter = require('express').Router()
 const {allProducts, showProduct, addProduct, editProduct, deleteProduct} = require('../controllers/product.controller')
 
-productRouter.get('product', allProducts)
+productRouter.get('/product', allProducts)
 
-productRouter.get('product/:id', showProduct)
+productRouter.get('/product/:id', showProduct)
 
-productRouter.post('product', addProduct)
+productRouter.post('/product', addProduct)
 
-productRouter.patch('product/id', editProduct)
+productRouter.patch('/product/id', editProduct)
 
-productRouter.delete('product/:id', deleteProduct)
+productRouter.delete('/product/:id', deleteProduct)
 
-moduel.exports = productRouter
+module.exports = productRouter

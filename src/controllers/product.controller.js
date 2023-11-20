@@ -1,7 +1,8 @@
 const Product = require('../models/product.model')
 
 const addProduct = async (req, res) => {
-    const newProduct = await Product.save(req.body)
+    const newProduct = new Product(req.body)
+    await newProduct.save()
     res.json(newProduct)
 }
 
@@ -18,6 +19,10 @@ const allProducts = async (req, res) => {
 const editProduct = async = async (req, res) => {
     const productModified = await Product.findOneAndUpdate({_id: req.params.id}, req.body, {new: true})
     res.json(productModified)
+}
+
+const updateCurrency = async (req, res) => {
+    
 }
 
 const deleteProduct = async (req, res) => {
